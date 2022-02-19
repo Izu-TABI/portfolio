@@ -22,6 +22,7 @@ body {
 }
 a {
     cursor: pointer;
+    font-size: 10px;
 }
 
 .p-text {
