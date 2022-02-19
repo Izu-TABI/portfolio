@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=PT+Serif&family=Ubuntu&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    overflow-y: scroll;
+    -ms-overflow-style: none;    /* IE, Edge 対応 */
+    scrollbar-width: none;       /* Firefox 対応 */
+}
+
+*::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+    display:none;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(240, 240, 240);
+}
+a {
+    cursor: pointer;
+}
+
+.p-text {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 4px;
+}
+
+li {
+    list-style: none;
+    
+}
+
+/* ロード画面 */
+#load {
+    position: fixed;
+    /* text-align: center;
+    align-items: center; */
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background: #000;
+    align-items: center;
+    text-align: center;
+
+    z-index: 2;
+}
+
+.title {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    position: relative;
+    display: inline;
+    top: 43%;
+    padding-left: 30px;
+    padding-right: 30px;
+    letter-spacing: 2px;
+}
+
+#star {
+    position: fixed;
+    align-items: center;
+    margin-top: 30px; 
+    top: 45%;
+    background: #fff;
+    height: 2px;
+    width: 0%;
+}
+
+/* ヘッダー */
+
+header {
+    user-select: none; 
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background: rgb(75, 74, 74);
+    z-index: 1;
+}
+
+.small-title a {
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    position: fixed;
+    display: inline;
+    margin-right: auto; 
+    margin-top: 20px;
+    margin-left: 15px;
+    align-items: center;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+
+.h-nav, .nav-area {
+    color: #fff;
+    position: fixed;
+    right: 0;
+    margin-top: 24px;
+    margin-right: 50px; 
+    display: flex;
+}
+
+.h-nav li{
+    display: inline;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    width: 100%;
+    margin-left: 40px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position: flex;
+    width: 65px;
+}
+
+
+.h-nav-site:hover::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    border-bottom: solid 2px #fff;
+    animation: border_site_animation 0.3s linear forwards;
+}
+
+
+@keyframes border_site_animation {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 35.094px;
+    }
+}
+
+
+.h-nav-history:hover::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    border-bottom: solid 2px #fff;
+    animation: border_history_animation 0.3s linear forwards;
+}
+
+
+@keyframes border_history_animation {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 63.297px;
+    }
+}
+
+
+.h-nav-skills:hover::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    border-bottom: solid 2px #fff;
+    animation: border_skills_animation 0.3s linear forwards;
+}
+
+
+@keyframes border_skills_animation {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 49.625px;
+    }
+}
+
+
+.h-nav-works:hover::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    border-bottom: solid 2px #fff;
+    animation: border_works_animation 0.3s linear forwards;
+}
+
+
+@keyframes border_works_animation {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 58px;
+    }
+}
+
+
+
+.h-nav-links:hover::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    border-bottom: solid 2px #fff;
+    animation: border_links_animation 0.3s linear forwards;
+}
+
+
+
+@keyframes border_links_animation {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 44.609px;
+    }
+}
+
+
+h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 25px;
+    position: flex;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.text-area-site, .main-about-skills, .main-about-works, .main-about-links {
+    position: relative;
+    text-align: center;
+}
+.main-about-links {
+    margin-bottom: 100px;
+}
+
+
+.twitter-logo, .instagram-logo {
+    margin-left: 50px;
+}
+
+.img-logo {
+    height: 40px;
+    width: 40px;
+}
+
+
+
+.log-bot-area {
+    width: 100%;
+    position: relative;
+}
+
+
+.log-bot-everyone {
+    width: 40%;
+    
+}
+.log-bot-join {
+    width: 40%;
+
+}
+
+.bot-img, .log-bot-everyone {
+    position: relative;
+    margin-top: 30px;
+}
+
+.github-link {
+    color: #000;
+    font-size: 4px;
+}
+
+.bot-weather {
+    width: 40%;
+}
