@@ -22,7 +22,6 @@ body {
 }
 a {
     cursor: pointer;
-    font-size: 10px;
 }
 
 .p-text {
@@ -285,7 +284,7 @@ h4 {
 
 .github-link {
     color: #000;
-    font-size: 4px;
+    font-size: 10px;
 }
 
 .bot-weather {
