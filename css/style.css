@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=PT+Serif&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus&family=M+PLUS+Rounded+1c:wght@300&family=Noto+Sans:wght@500&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -49,7 +50,9 @@ li {
 }
 
 .title {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Gentium Plus', serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-size: 30px;
     position: relative;
     display: inline;
@@ -82,7 +85,9 @@ header {
 }
 
 .small-title a {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Gentium Plus', serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     text-decoration: none;
     position: fixed;
     display: inline;
@@ -224,22 +229,41 @@ header {
         width: 44.609px;
     }
 }
+/* 
+.element {
+    opacity: 0;
+    visibility: hidden;
+    transform : sranslateY(30px);
+    transition: opacity 1s, visibility 1s, transform 1s;
+}
+
+.is-fadein {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+} */
+
 
 
 h3 {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 25px;
-    border-bottom: 1px soild #000;
+    font-size: 35px;
+    border-bottom: 1px solid #ddd;
     position: flex;
     text-align: center;
-    margin-top: 100px;
-    margin-bottom: 20px;
+    margin-top: 150px;
+    margin-bottom: 40px;
+}
+
+.main-about-skills {
+    margin-top: 50px;
 }
 
 h4 {
     position: relative;
     text-align: center;
     margin-top: 20px;
+    display: inline;
 }
 
 
@@ -290,4 +314,11 @@ h4 {
 
 .bot-weather {
     width: 40%;
+}
+
+.copyright {
+    margin-bottom: 30px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    color: rgb(157, 157, 157);
 }
