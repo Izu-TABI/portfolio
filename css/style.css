@@ -105,9 +105,10 @@ header {
     color: #fff;
     position: fixed;
     right: 0;
-    margin-top: 30px;
-    margin-right: 50px; 
+    margin-top: 34px;
     display: flex;
+    text-align: center;
+    font-size:0; 
 }
 
 .h-nav li{
@@ -115,10 +116,9 @@ header {
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     width: 100%;
-    margin-left: 40px;
+    margin-left: 15px;
     letter-spacing: 1px;
     cursor: pointer;
-    position: flex;
     width: 60px;
 }
 
@@ -228,6 +228,21 @@ header {
         width: 44.609px;
     }
 }
+/* 
+.element {
+    opacity: 0;
+    visibility: hidden;
+    transform : sranslateY(30px);
+    transition: opacity 1s, visibility 1s, transform 1s;
+}
+
+.is-fadein {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+} */
+
+
 
 h3 {
     font-family: 'Ubuntu', sans-serif;
@@ -235,12 +250,12 @@ h3 {
     border-bottom: 1px solid #ddd;
     position: flex;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 130px;
     margin-bottom: 40px;
 }
 
 .main-about-skills {
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 h4 {
